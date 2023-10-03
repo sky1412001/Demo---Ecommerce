@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: .2s linear;
+}
+.Vcontainer{
+    background:rgb(53, 197, 53);
+    padding: 15px 9%;
+    padding-bottom: 100px;
+  
+}
+.Vcontainer .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color:#fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+.Vcontainer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px, 1fr));
+    gap: 15px;
+}
+.Vcontainer .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding: 30px, 20px;
+}
+.Vcontainer .box-container .box img{
+    height: 120px;
+}
+.Vcontainer .box-container .box h3{
+    color: #444;
+    font-size: 22px;
+    padding: 10px ,0;  
+}
+.Vcontainer .box-container .box p{
+    color: #444;
+    font-size: 15px;
+    line-height: 1.8;
+}
+.Vcontainer .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+@media (max-width: 767px) {
+    .Vcontainer{
+        padding: 20px;
+    }
+}
